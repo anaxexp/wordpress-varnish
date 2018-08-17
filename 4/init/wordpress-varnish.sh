@@ -18,7 +18,7 @@ if [[ -z "${VARNISH_PURGE_KEY}" ]]; then
 fi
 
 _gotpl 'varnishd.init.d.tmpl' '/etc/init.d/varnishd'
-_gotpl 'secret.tmpl' '/etc/varnish/secret'
+#_gotpl 'secret.tmpl' '/etc/varnish/secret'
 _gotpl 'default.vcl.tmpl' '/etc/varnish/default.vcl'
 
 _gotpl 'conf/acl.vcl.tmpl'         '/etc/varnish/conf/acl.vcl'
