@@ -7,7 +7,7 @@ if [[ -n "${DEBUG}" ]]; then
 fi
 
 docker-compose up -d
-sleep 5
+
 echo "Running check-ready action... "
 docker-compose exec varnish make check-ready max_try=10 -f /usr/local/bin/actions.mk
 
